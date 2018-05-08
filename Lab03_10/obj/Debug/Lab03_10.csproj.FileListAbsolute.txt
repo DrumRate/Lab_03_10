@@ -1,0 +1,11 @@
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\bin\Debug\Lab03_10.exe.config
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\bin\Debug\Lab03_10.exe
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\bin\Debug\Lab03_10.pdb
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.csprojResolveAssemblyReference.cache
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.Form1.resources
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.Properties.Resources.resources
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.csproj.GenerateResource.cache
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.csproj.CoreCompileInputs.cache
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.exe
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.pdb
+E:\универ\Проектирование и тестирование\Lab03_10\Lab03_10\obj\Debug\Lab03_10.CreateEdit.resources
