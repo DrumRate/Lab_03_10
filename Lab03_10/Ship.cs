@@ -49,19 +49,19 @@ namespace Lab03_10
 
         public double Deplacement
         {
-            get { return Deplacement; }
+            get { return deplacement; }
             set { deplacement = value; }
         }
 
         public string Type
         {
-            get { return Type; }
+            get { return type; }
             set { type = value; }
         }
 
         public List<RoomType> Categories
         {
-            get { return Categories; }
+            get { return categories; }
             set { categories = value; }
         }
     }

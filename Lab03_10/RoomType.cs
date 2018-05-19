@@ -2,8 +2,8 @@
 {
     public enum RoomType : int
     {
-        Econome = 1,
-        Business = 2,
-        VIP = 3
+        Econome = 0,
+        Business = 1,
+        VIP = 2
     }
 }
