@@ -43,9 +43,6 @@ namespace Lab03_10
             ship.Deplacement = double.Parse(textBox2.Text);
             ship.Type = textBox3.Text;
             parentForm.AddShip(ship);
-            dgv.Columns.Add("Name", "Name");
-            dgv.Columns.Add("Deplacement", "Deplacement");
-            dgv.Columns.Add("Type", "Type");
 
             this.Close();
         }
