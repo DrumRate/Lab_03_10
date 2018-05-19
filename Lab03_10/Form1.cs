@@ -12,8 +12,8 @@ namespace Lab03_10
 {
     public partial class Form1 : Form
     {
-        private List<Ship> ships = new List<Ship>();
-
+        private List<Boat> ships = new List<Boat>();
+        
 
         public Form1()
         {
@@ -29,17 +29,49 @@ namespace Lab03_10
         public void AddShip(Boat boat)
         {
             ships.Add(boat);
+            string categories = "";
+            foreach (var category in boat.Categories)
+            {
+                categories += category + ", ";
+            }
+            this.dataGridView1.Rows.Add(boat.Name, boat.Deplacement, categories, boat.Type);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var createEditForm = new CreateEdit(this);
+            var createEditForm = new CreateEdit(this,ships[dataGridView1.CurrentCell.RowIndex]);
             createEditForm.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void RefreshDataGrid()  
+        {
+            dataGridView1.Rows.Clear();
+            foreach (var boat in ships)
+            {
+                string categories = "";
+                foreach (var category in boat.Categories)
+                {
+                    categories += category + ", ";
+                }
+                this.dataGridView1.Rows.Add(boat.Name, boat.Deplacement, categories, boat.Type);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int index = dataGridView1.CurrentCell.RowIndex;
+            dataGridView1.Rows.RemoveAt(index);
+            ships.RemoveAt(index);
         }
     }
 
