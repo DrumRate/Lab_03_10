@@ -31,6 +31,16 @@ namespace Lab03_10
             ships.Add(boat);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var createEditForm = new CreateEdit(this);
+            createEditForm.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }
