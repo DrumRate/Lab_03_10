@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace Lab03_10
 {
+    [Serializable]
     public class Boat : Ship, ITransport, IMoored
     {
-        private int PassangersCount = 0;
+        public int PassangersCount = 0;
 
         public override string ToString()
         {

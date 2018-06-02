@@ -12,10 +12,10 @@ namespace Lab03_10
 {
     public partial class CreateEdit : Form
     {
-        private Form1 parentForm;
+        public Form1 parentForm;
         private DataGridView dgv;
         private bool isEdit = false;
-        private Boat ship;
+        public Boat ship;
 
         public CreateEdit(Form1 form1)
         {
@@ -31,6 +31,10 @@ namespace Lab03_10
             comboBox1.SelectedIndex = comboBox1.Items.IndexOf(ship.Categories[0].ToString());
             textBox2.Text = ship.Deplacement.ToString();
             //isEdit = true;
+        }
+
+        public CreateEdit()
+        {
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -89,5 +93,7 @@ namespace Lab03_10
         {
 
         }
+
+
     }
 }

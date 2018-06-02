@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace Lab03_10
 {
-    public abstract class Ship
+    [Serializable]
+    public class Ship
     {
         public override string ToString()
         {
@@ -32,6 +33,16 @@ namespace Lab03_10
             this.x = x;
             this.y = y;
             Console.WriteLine($"Moving to {x}, {y}");
+        }
+
+        internal void Show()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Activate()
+        {
+            throw new NotImplementedException();
         }
 
         protected string name;
@@ -64,5 +75,9 @@ namespace Lab03_10
             get { return categories; }
             set { categories = value; }
         }
+
+       // public MainForm MdiParent { get; internal set; }
+        public string Text { get; internal set; }
+        public int FormClosed { get; internal set; }
     }
 }
